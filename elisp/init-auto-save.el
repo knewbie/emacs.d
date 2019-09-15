@@ -1,7 +1,7 @@
 
 (use-package 'auto-save
-  :load-path "elpa/auto-save"
-  :config
+  :load-path "elpa/auto-save" 
+  :config  
   (auto-save-enable)
   (setq auto-save-silent t)
   (setq auto-save-delete-trailing-whitespace t)
