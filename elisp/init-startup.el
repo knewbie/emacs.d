@@ -7,6 +7,9 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; all backup goto ~/.emacs.d/backup directory 
+(setq backup-directory-alist (quote (("." . "~/.emacs.d/backup"))))
+
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (if (featurep 'cocoa)
@@ -26,7 +29,7 @@
       ;; 默认先最大化。
       (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
 
-      (run-at-time "2sec" nil
+      (run-at-time "1sec" nil
                    (lambda ()
                      (toggle-frame-fullscreen)
                      ))
